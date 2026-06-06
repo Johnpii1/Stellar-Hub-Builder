@@ -14,11 +14,11 @@ Our mission is to reduce barriers to entry for blockchain development and create
 
 Many developers interested in the Stellar ecosystem face challenges such as:
 
-* Difficulty discovering active projects
-* Limited visibility into contribution opportunities
-* Fragmented learning resources
-* Lack of structured onboarding paths
-* Limited collaboration between builders and maintainers
+- Difficulty discovering active projects
+- Limited visibility into contribution opportunities
+- Fragmented learning resources
+- Lack of structured onboarding paths
+- Limited collaboration between builders and maintainers
 
 These challenges slow ecosystem growth and make it harder for new contributors to get involved.
 
@@ -28,12 +28,12 @@ These challenges slow ecosystem growth and make it harder for new contributors t
 
 Stellar Builders Hub provides a centralized platform that enables:
 
-* Project discovery and ecosystem visibility
-* Contributor onboarding and mentorship
-* Open-source bounty opportunities
-* Learning resources for Stellar and Soroban
-* Collaboration between maintainers and contributors
-* Recognition of community contributions
+- Project discovery and ecosystem visibility
+- Contributor onboarding and mentorship
+- Open-source bounty opportunities
+- Learning resources for Stellar and Soroban
+- Collaboration between maintainers and contributors
+- Recognition of community contributions
 
 By connecting builders with opportunities, the platform helps accelerate development and innovation throughout the Stellar ecosystem.
 
@@ -43,44 +43,44 @@ By connecting builders with opportunities, the platform helps accelerate develop
 
 ### Developer Hub
 
-* Developer profiles
-* Contribution history
-* Portfolio showcase
+- Developer profiles
+- Contribution history
+- Portfolio showcase
 
 ### Project Directory
 
-* Discover Stellar projects
-* Filter by category and technology
-* Project showcase pages
+- Discover Stellar projects
+- Filter by category and technology
+- Project showcase pages
 
 ### Contributor Marketplace
 
-* Open issues and bounties
-* Contribution opportunities
-* Task tracking
+- Open issues and bounties
+- Contribution opportunities
+- Task tracking
 
 ### Learning Center
 
-* Stellar development guides
-* Soroban tutorials
-* Best practices and documentation
+- Stellar development guides
+- Soroban tutorials
+- Best practices and documentation
 
 ### Community Features
 
-* Mentorship programs
-* Builder networking
-* Collaboration tools
+- Mentorship programs
+- Builder networking
+- Collaboration tools
 
 ---
 
 ## 🛠 Technology Stack
 
-* React
-* TypeScript
-* Tailwind CSS
-* Stellar SDK
-* Soroban Smart Contracts
-* Node.js
+- React
+- TypeScript
+- Tailwind CSS
+- Stellar SDK
+- Soroban Smart Contracts
+- Node.js
 
 ---
 
@@ -88,21 +88,21 @@ By connecting builders with opportunities, the platform helps accelerate develop
 
 ### Phase 1
 
-* Landing page
-* Project directory
-* Contributor onboarding
+- Landing page
+- Project directory
+- Contributor onboarding
 
 ### Phase 2
 
-* Bounty management system
-* Developer profiles
-* Learning center
+- Bounty management system
+- Developer profiles
+- Learning center
 
 ### Phase 3
 
-* Reputation system
-* Ecosystem analytics
-* Community governance features
+- Reputation system
+- Ecosystem analytics
+- Community governance features
 
 ---
 
@@ -123,4 +123,3 @@ To become the leading collaboration and innovation hub for builders within the S
 ## 📄 License
 
 MIT License
-vvvvvvvv

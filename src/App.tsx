@@ -58,7 +58,7 @@ function Icon({ name, className }: IconProps) {
 }
 
 
-const navItems = ['Discover', 'Opportunities', 'Learn', 'Community'];
+const navItems = ['Features', 'Opportunities', 'Learn', 'Community'];
 
 const stats = [
   { value: '120+', label: 'Ecosystem projects' },
@@ -69,23 +69,23 @@ const stats = [
 const features = [
   {
     icon: 'compass' as const,
-    title: 'Project discovery',
-    description: 'Explore curated Stellar and Soroban initiatives with clear signals for maturity, activity, and contribution needs.',
-  },
-  {
-    icon: 'git' as const,
-    title: 'Contribution marketplace',
-    description: 'Find open issues, bounties, and maintainers looking for help across wallets, tools, smart contracts, and infrastructure.',
+    title: 'Discover Projects',
+    description: 'Browse curated Stellar and Soroban projects with clear context, contribution needs, and ecosystem momentum.',
   },
   {
     icon: 'book' as const,
-    title: 'Guided learning paths',
-    description: 'Follow practical onboarding tracks that move builders from first setup to meaningful ecosystem contributions.',
+    title: 'Learn Stellar & Soroban',
+    description: 'Follow practical learning paths that help you understand payments, smart contracts, tooling, and real-world workflows.',
+  },
+  {
+    icon: 'trophy' as const,
+    title: 'Earn Recognition',
+    description: 'Build a visible contributor profile through badges, milestones, and signals that celebrate meaningful ecosystem impact.',
   },
   {
     icon: 'users' as const,
-    title: 'Builder community',
-    description: 'Connect with mentors, peers, and project teams through a collaboration-first hub built for open-source momentum.',
+    title: 'Join the Community',
+    description: 'Meet mentors, maintainers, and peers who can help you collaborate faster and stay connected across the Stellar network.',
   },
 ];
 
@@ -149,7 +149,7 @@ function App() {
               </p>
               <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
                 <a
-                  href="#discover"
+                  href="#features"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-300 px-6 py-3 font-semibold text-slate-950 shadow-glow transition hover:-translate-y-0.5 hover:bg-cyan-200"
                 >
                   Explore Projects <Icon name="arrow" className="h-4 w-4" />
@@ -229,20 +229,29 @@ function App() {
         </div>
       </section>
 
-      <section id="discover" className="relative z-10 border-y border-white/10 bg-white/[0.03] py-20">
+      <section id="features" className="relative z-10 border-y border-white/10 bg-white/[0.03] py-20">
+        <div className="absolute inset-x-0 top-0 -z-10 h-56 bg-gradient-to-b from-cyan-400/10 to-transparent" />
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-200">Discover</p>
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-200">Features</p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Everything builders need to enter the Stellar ecosystem.</h2>
+            <p className="mt-5 text-slate-300">
+              Discover opportunities, learn the stack, earn credibility, and connect with the people building the future of Stellar.
+            </p>
           </div>
-          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {features.map((feature) => (
-              <article key={feature.title} className="group rounded-3xl border border-white/10 bg-slate-950/60 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-cyan-300/40 hover:bg-slate-900/80">
-                <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-300/10 text-cyan-200 group-hover:shadow-glow">
-                  <Icon name={feature.icon} className="h-6 w-6" />
+              <article
+                key={feature.title}
+                className="group relative overflow-hidden rounded-3xl border border-white/10 bg-slate-950/70 p-6 shadow-2xl shadow-cyan-950/20 backdrop-blur transition duration-300 hover:-translate-y-2 hover:border-cyan-300/50 hover:bg-slate-900/90 hover:shadow-cyan-400/20"
+              >
+                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-200/70 to-transparent opacity-0 transition group-hover:opacity-100" />
+                <div className="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-cyan-300/10 blur-2xl transition group-hover:bg-cyan-300/20" />
+                <div className="relative mb-6 flex h-14 w-14 items-center justify-center rounded-2xl border border-cyan-200/20 bg-cyan-300/10 text-cyan-200 transition duration-300 group-hover:scale-110 group-hover:shadow-glow">
+                  <Icon name={feature.icon} className="h-7 w-7" />
                 </div>
-                <h3 className="text-lg font-semibold">{feature.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-slate-400">{feature.description}</p>
+                <h3 className="relative text-lg font-semibold">{feature.title}</h3>
+                <p className="relative mt-3 text-sm leading-6 text-slate-400 transition group-hover:text-slate-300">{feature.description}</p>
               </article>
             ))}
           </div>

@@ -131,93 +131,97 @@ function App() {
         </a>
       </header>
 
-      <section id="top" className="relative z-10 mx-auto max-w-7xl px-6 pb-24 pt-12 lg:px-8 lg:pb-32 lg:pt-20">
-        <div className="grid items-center gap-14 lg:grid-cols-[1.04fr_0.96fr]">
-          <div>
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-sm text-cyan-100">
-              <Icon name="zap" className="h-4 w-4" />
-              A launchpad for the Stellar builder ecosystem
-            </div>
-            <h1 className="max-w-4xl text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Build, contribute, and grow across the Stellar network.
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-              Stellar Builders Hub connects developers with projects, learning paths, bounties, and collaborators in one polished home for ecosystem innovation.
-            </p>
-            <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-              <a
-                href="#discover"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-300 px-6 py-3 font-semibold text-slate-950 shadow-glow transition hover:-translate-y-0.5 hover:bg-cyan-200"
-              >
-                Explore the hub <Icon name="arrow" className="h-4 w-4" />
-              </a>
-              <a
-                href="#opportunities"
-                className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-6 py-3 font-semibold text-white backdrop-blur transition hover:-translate-y-0.5 hover:border-white/25"
-              >
-                View opportunities
-              </a>
-            </div>
-            <div className="mt-12 grid max-w-2xl grid-cols-3 gap-3 sm:gap-5">
-              {stats.map((stat) => (
-                <div key={stat.label} className="rounded-2xl border border-white/10 bg-white/[0.04] p-4 backdrop-blur">
-                  <div className="text-2xl font-semibold text-white sm:text-3xl">{stat.value}</div>
-                  <div className="mt-1 text-xs text-slate-400 sm:text-sm">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="relative mx-auto w-full max-w-xl">
-            <div className="absolute -inset-6 rounded-[2.5rem] bg-cyan-400/20 blur-3xl" />
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/80 p-5 shadow-2xl backdrop-blur-xl">
-              <div className="mb-5 flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3">
-                <div className="flex items-center gap-3">
-                  <div className="h-3 w-3 rounded-full bg-red-400" />
-                  <div className="h-3 w-3 rounded-full bg-amber-300" />
-                  <div className="h-3 w-3 rounded-full bg-emerald-300" />
-                </div>
-                <span className="text-xs text-slate-400">hub.stellar.builders</span>
+      <section id="top" className="relative z-10 overflow-hidden">
+        <div className="absolute inset-0 -z-10 bg-hero-gradient" />
+        <div className="absolute left-1/2 top-0 -z-10 h-72 w-72 -translate-x-1/2 rounded-full bg-cyan-300/20 blur-3xl sm:h-96 sm:w-96" />
+        <div className="mx-auto max-w-7xl px-6 pb-24 pt-12 lg:px-8 lg:pb-32 lg:pt-20">
+          <div className="grid items-center gap-14 lg:grid-cols-[1.04fr_0.96fr]">
+            <div className="text-center lg:text-left">
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-sm text-cyan-100 shadow-glow backdrop-blur">
+                <Icon name="zap" className="h-4 w-4" />
+                A launchpad for the Stellar builder ecosystem
               </div>
-
-              <div className="rounded-3xl border border-cyan-300/20 bg-gradient-to-br from-cyan-300/15 via-blue-500/10 to-fuchsia-400/10 p-6">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-sm uppercase tracking-[0.32em] text-cyan-200">Live ecosystem</p>
-                    <h2 className="mt-3 text-2xl font-semibold">Builder graph</h2>
+              <h1 className="mx-auto max-w-4xl text-4xl font-semibold tracking-tight text-white sm:text-6xl lg:mx-0 lg:text-7xl">
+                Build, Collaborate, and Grow on Stellar
+              </h1>
+              <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-slate-200 sm:text-lg lg:mx-0">
+                Stellar Builders Hub connects Stellar projects with contributors and developers, making it easier to discover meaningful work, collaborate with teams, and grow the ecosystem together.
+              </p>
+              <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
+                <a
+                  href="#discover"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-300 px-6 py-3 font-semibold text-slate-950 shadow-glow transition hover:-translate-y-0.5 hover:bg-cyan-200"
+                >
+                  Explore Projects <Icon name="arrow" className="h-4 w-4" />
+                </a>
+                <a
+                  href="#opportunities"
+                  className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition hover:-translate-y-0.5 hover:border-cyan-200/50 hover:bg-white/15"
+                >
+                  Become a Contributor
+                </a>
+              </div>
+              <div className="mx-auto mt-12 grid max-w-2xl grid-cols-3 gap-3 sm:gap-5 lg:mx-0">
+                {stats.map((stat) => (
+                  <div key={stat.label} className="rounded-2xl border border-white/10 bg-white/[0.04] p-4 backdrop-blur">
+                    <div className="text-2xl font-semibold text-white sm:text-3xl">{stat.value}</div>
+                    <div className="mt-1 text-xs text-slate-400 sm:text-sm">{stat.label}</div>
                   </div>
-                  <Icon name="network" className="h-10 w-10 text-cyan-200" />
+                ))}
+              </div>
+            </div>
+
+            <div className="relative mx-auto w-full max-w-xl">
+              <div className="absolute -inset-6 rounded-[2.5rem] bg-cyan-400/20 blur-3xl" />
+              <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/80 p-5 shadow-2xl backdrop-blur-xl">
+                <div className="mb-5 flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3">
+                  <div className="flex items-center gap-3">
+                    <div className="h-3 w-3 rounded-full bg-red-400" />
+                    <div className="h-3 w-3 rounded-full bg-amber-300" />
+                    <div className="h-3 w-3 rounded-full bg-emerald-300" />
+                  </div>
+                  <span className="text-xs text-slate-400">hub.stellar.builders</span>
                 </div>
-                <div className="mt-8 grid grid-cols-3 gap-3">
-                  {['Wallets', 'Soroban', 'Infra', 'Docs', 'Bounties', 'Mentors'].map((node, index) => (
-                    <div
-                      key={node}
-                      className={`rounded-2xl border border-white/10 bg-white/10 p-3 text-center text-sm text-slate-100 ${
-                        index === 1 || index === 4 ? 'shadow-glow' : ''
-                      }`}
-                    >
-                      {node}
+
+                <div className="rounded-3xl border border-cyan-300/20 bg-gradient-to-br from-cyan-300/15 via-blue-500/10 to-fuchsia-400/10 p-6">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-sm uppercase tracking-[0.32em] text-cyan-200">Live ecosystem</p>
+                      <h2 className="mt-3 text-2xl font-semibold">Builder graph</h2>
                     </div>
-                  ))}
+                    <Icon name="network" className="h-10 w-10 text-cyan-200" />
+                  </div>
+                  <div className="mt-8 grid grid-cols-3 gap-3">
+                    {['Wallets', 'Soroban', 'Infra', 'Docs', 'Bounties', 'Mentors'].map((node, index) => (
+                      <div
+                        key={node}
+                        className={`rounded-2xl border border-white/10 bg-white/10 p-3 text-center text-sm text-slate-100 ${
+                          index === 1 || index === 4 ? 'shadow-glow' : ''
+                        }`}
+                      >
+                        {node}
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
 
-              <div className="mt-5 grid gap-4 sm:grid-cols-2">
-                <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-5">
-                  <div className="flex items-center gap-2 text-cyan-200">
-                    <Icon name="shield" className="h-5 w-5" />
-                    <span className="text-sm font-medium">Trust signals</span>
+                <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                  <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-5">
+                    <div className="flex items-center gap-2 text-cyan-200">
+                      <Icon name="shield" className="h-5 w-5" />
+                      <span className="text-sm font-medium">Trust signals</span>
+                    </div>
+                    <p className="mt-4 text-3xl font-semibold">98%</p>
+                    <p className="mt-1 text-sm text-slate-400">Verified project readiness</p>
                   </div>
-                  <p className="mt-4 text-3xl font-semibold">98%</p>
-                  <p className="mt-1 text-sm text-slate-400">Verified project readiness</p>
-                </div>
-                <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-5">
-                  <div className="flex items-center gap-2 text-fuchsia-200">
-                    <Icon name="trophy" className="h-5 w-5" />
-                    <span className="text-sm font-medium">Recognition</span>
+                  <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-5">
+                    <div className="flex items-center gap-2 text-fuchsia-200">
+                      <Icon name="trophy" className="h-5 w-5" />
+                      <span className="text-sm font-medium">Recognition</span>
+                    </div>
+                    <p className="mt-4 text-3xl font-semibold">4.8k</p>
+                    <p className="mt-1 text-sm text-slate-400">Contributor badges tracked</p>
                   </div>
-                  <p className="mt-4 text-3xl font-semibold">4.8k</p>
-                  <p className="mt-1 text-sm text-slate-400">Contributor badges tracked</p>
                 </div>
               </div>
             </div>
